@@ -62,6 +62,22 @@ ClassicEditor.builtinPlugins = [
 
 // Editor configuration.
 ClassicEditor.defaultConfig = {
+	fontColor: {
+		colors: [
+			{
+				color: 'rgb(255, 204, 0)',
+				label: 'Yellow'
+			},
+			{
+				color: 'rgb(0, 0, 128)',
+				label: 'Dark Blue'
+			},
+			{
+				color: 'rgb(0, 32, 96)',
+				label: 'Light Blue'
+			}
+		]
+	},
 	toolbar: {
 		items: [
 			'heading',
