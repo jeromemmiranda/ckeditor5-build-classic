@@ -82,8 +82,8 @@ ClassicEditor.builtinPlugins = [
 
 // Editor configuration.
 ClassicEditor.defaultConfig = {
-	fontColor: { colors },
-	fontBackgroundColor: { colors },
+	fontColor: { colors, columns: 15 },
+	fontBackgroundColor: { colors, columns: 15 },
 	toolbar: {
 		items: [
 			'heading',
