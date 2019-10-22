@@ -11,6 +11,15 @@ import UploadAdapter from '@ckeditor/ckeditor5-adapter-ckfinder/src/uploadadapte
 import Autoformat from '@ckeditor/ckeditor5-autoformat/src/autoformat';
 import Bold from '@ckeditor/ckeditor5-basic-styles/src/bold';
 import Italic from '@ckeditor/ckeditor5-basic-styles/src/italic';
+import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline';
+import Strikethrough from '@ckeditor/ckeditor5-basic-styles/src/strikethrough';
+import Code from '@ckeditor/ckeditor5-basic-styles/src/code';
+import Subscript from '@ckeditor/ckeditor5-basic-styles/src/subscript';
+import Superscript from '@ckeditor/ckeditor5-basic-styles/src/superscript';
+import FontFamily from '@ckeditor/ckeditor5-font/src/fontfamily';
+import FontSize from '@ckeditor/ckeditor5-font/src/fontsize';
+import FontColor from '@ckeditor/ckeditor5-font/src/fontcolor';
+import FontBackgroundColor from '@ckeditor/ckeditor5-font/src/fontbackgroundcolor';
 import BlockQuote from '@ckeditor/ckeditor5-block-quote/src/blockquote';
 import CKFinder from '@ckeditor/ckeditor5-ckfinder/src/ckfinder';
 import EasyImage from '@ckeditor/ckeditor5-easy-image/src/easyimage';
@@ -39,6 +48,15 @@ ClassicEditor.builtinPlugins = [
 	Autoformat,
 	Bold,
 	Italic,
+	Underline,
+	Strikethrough,
+	Code,
+	Subscript,
+	Superscript,
+	FontFamily,
+	FontSize,
+	FontColor,
+	FontBackgroundColor,
 	BlockQuote,
 	CKFinder,
 	EasyImage,
@@ -62,12 +80,37 @@ ClassicEditor.builtinPlugins = [
 
 // Editor configuration.
 ClassicEditor.defaultConfig = {
+	fontColor: {
+		colors: [
+			{
+				color: 'rgb(255, 204, 0)',
+				label: 'Yellow'
+			},
+			{
+				color: 'rgb(0, 0, 128)',
+				label: 'Dark Blue'
+			},
+			{
+				color: 'rgb(0, 32, 96)',
+				label: 'Light Blue'
+			}
+		]
+	},
 	toolbar: {
 		items: [
 			'heading',
 			'|',
 			'bold',
 			'italic',
+			'underline',
+			'strikethrough',
+			'code',
+			'subscript',
+			'superscript',
+			'fontFamily',
+			'fontSize',
+			'fontColor',
+			'fontBackgroundColor',
 			'link',
 			'bulletedList',
 			'numberedList',
