@@ -39,7 +39,9 @@ import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 
 import Base64UploadAdapter from '@ckeditor/ckeditor5-upload/src/adapters/base64uploadadapter';
 
-export default class ClassicEditor extends ClassicEditorBase {}
+import { colors } from './colors';
+
+export default class ClassicEditor extends ClassicEditorBase { }
 
 // Plugins to include in the build.
 ClassicEditor.builtinPlugins = [
@@ -80,22 +82,8 @@ ClassicEditor.builtinPlugins = [
 
 // Editor configuration.
 ClassicEditor.defaultConfig = {
-	fontColor: {
-		colors: [
-			{
-				color: 'rgb(255, 204, 0)',
-				label: 'Yellow'
-			},
-			{
-				color: 'rgb(0, 0, 128)',
-				label: 'Dark Blue'
-			},
-			{
-				color: 'rgb(0, 32, 96)',
-				label: 'Light Blue'
-			}
-		]
-	},
+	fontColor: { colors },
+	fontBackgroundColor: { colors },
 	toolbar: {
 		items: [
 			'heading',
