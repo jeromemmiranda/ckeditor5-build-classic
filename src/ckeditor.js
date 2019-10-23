@@ -84,6 +84,25 @@ ClassicEditor.builtinPlugins = [
 ClassicEditor.defaultConfig = {
 	fontColor: { colors, columns: 15 },
 	fontBackgroundColor: { colors, columns: 15 },
+	fontSize: {
+		options: [
+			9,
+			10,
+			11,
+			12,
+			13,
+			14,
+			18,
+			24,
+			36,
+			48,
+			64,
+			72,
+			96,
+			144,
+			288
+		]
+	},
 	toolbar: {
 		items: [
 			'heading',
